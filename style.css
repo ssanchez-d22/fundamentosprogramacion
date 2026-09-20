@@ -1,0 +1,239 @@
+body{
+  font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+  margin:0;
+  background-color:rgb(240,240,247);
+  color:black;
+}
+
+.skip-link{
+  position:absolute;
+  top:-60px;
+  left:15px;
+  z-index:1000;
+  color:rgba(16,82,224,0.959);
+  background-color:white;
+  padding:8px 12px;
+  font-family:'Times New Roman',Times,serif;
+  font-weight:bold;
+  border-radius:6px;
+}
+
+.skip-link:focus{
+  top:10px;
+}
+
+.banner{
+  width:100%;
+  height:160px;
+  object-fit:cover;
+  display:block;
+}
+
+header{
+  position:relative;
+  height:75px;
+  background-color:rgb(157,197,207);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:0 20px;
+  box-sizing:border-box;
+}
+
+.logo{
+  position:absolute;
+  left:20px;
+  top:50%;
+  transform:translateY(-50%);
+  width:175px;
+  object-fit:contain;
+}
+
+nav{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:15px;
+}
+
+nav a{
+  text-decoration:none;
+  color:rgb(22,60,165);
+  font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;
+  background-color:rgba(251,252,247,0.884);
+  padding:8px 18px;
+  font-weight:bold;
+  border-radius:10px;
+  white-space:nowrap;
+  transition:transform 0.3s ease,background-color 0.3s ease;
+}
+
+nav a:hover{
+  transform:scale(1.05);
+  background-color:white;
+}
+
+main{
+  margin-left:9%;
+  margin-right:9%;
+}
+
+h1{
+  font-family:'Franklin Gothic Medium','Arial Narrow',Arial,sans-serif;
+  font-size:36px;
+}
+
+.destinos{
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+  flex-wrap:wrap;
+  gap:25px;
+}
+
+.destinos div{
+  width:150px;
+  text-align:center;
+}
+
+.destinos img{
+  width:100%;
+  height:100px;
+  object-fit:cover;
+  border-radius:8px;
+  opacity:0.8;
+  transition:transform 0.3s ease,opacity 0.3s ease;
+}
+
+.destinos img:hover{
+  opacity:1;
+  transform:scale(1.08) translateY(-3px);
+}
+
+.practicas-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+.practicas-grid article:nth-child(odd) .practica-img{
+  border-radius:80px 5px;
+}
+
+.practica-img{
+  width:100%;
+  max-width:250px;
+  height:150px;
+  object-fit:cover;
+  border-radius:8px;
+}
+main img{
+    border: 1px solid;
+    padding:3px;
+    box-sizing: border-box;
+}
+
+.empresa-img{
+  width:100%;
+  max-width:300px;
+  height:140px;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+@media(max-width:800px){
+  header{
+    height:70px;
+    padding:0 15px;
+  }
+
+  .logo{
+    left:15px;
+    width:140px;
+    max-height:55px;
+  }
+
+  nav{
+    gap:10px;
+  }
+
+  nav a{
+    padding:7px 12px;
+    font-size:14px;
+  }
+
+  main{
+    margin-left:5%;
+    margin-right:5%;
+  }
+}
+
+@media(max-width:500px){
+  header{
+    height:115px;
+    padding:0 10px;
+  }
+
+  .logo{
+    top:8px;
+    left:50%;
+    transform:translateX(-50%);
+    width:125px;
+    max-height:48px;
+  }
+
+  nav{
+    position:absolute;
+    bottom:12px;
+    left:50%;
+    width:calc(100% - 20px);
+    transform:translateX(-50%);
+    justify-content:center;
+    gap:6px;
+  }
+
+  nav a{
+    flex:1;
+    max-width:110px;
+    padding:8px 6px;
+    font-size:13px;
+    text-align:center;
+  }
+
+  .banner{
+    height:120px;
+  }
+
+  main{
+    margin-left:20px;
+    margin-right:20px;
+  }
+
+  h1{
+    font-size:28px;
+  }
+
+  .destinos{
+    gap:15px;
+  }
+
+  .destinos div{
+    width:45%;
+  }
+
+  .destinos img{
+    width:100%;
+    height:100px;
+  }
+
+  .practicas-grid{
+    grid-template-columns:1fr;
+  }
+
+  .practica-img{
+    max-width:100%;
+  }
+
+  .empresa-img{
+    max-width:100%;
+  }
+}

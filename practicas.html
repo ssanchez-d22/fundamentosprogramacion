@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prácticas | PracticasHub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main">Saltar al contenido principal</a>
+
+  <img
+    class="banner"
+    src="images/BANER.png"
+    alt="Estudiantes desarrollando una experiencia profesional internacional">
+
+  <header>
+    <img src="images/logo.png" alt="PrácticasHub" class="logo">
+
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="practicas.html">Prácticas</a>
+      <a href="empresas.html">Empresas</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <section>
+      <h1>Explora prácticas internacionales</h1>
+
+      <p>
+        Descubre oportunidades profesionales en diferentes países
+        y encuentra una experiencia que se adapte a tus intereses.
+      </p>
+    </section>
+
+    <section>
+      <h2>Oportunidades disponibles</h2>
+
+      <div class="practicas-grid">
+
+        <article>
+          <img
+            class="practica-img"
+            src="images/marketing.jpg"
+            alt="Equipo trabajando en marketing">
+
+          <h3>Práctica en Marketing</h3>
+          <p><strong>País:</strong> Aruba</p>
+          <p><strong>Modalidad:</strong> Presencial</p>
+          <p><strong>Duración:</strong> 4 meses</p>
+          <a href="#aplicar">Aplicar a esta oportunidad</a>
+        </article>
+
+        <article>
+          <img
+            class="practica-img"
+            src="images/negocios.jpg"
+            alt="Profesionales trabajando en negocios">
+
+          <h3>Práctica en Desarrollo de Negocios</h3>
+          <p><strong>País:</strong> Colombia</p>
+          <p><strong>Modalidad:</strong> Híbrida</p>
+          <p><strong>Duración:</strong> 6 meses</p>
+          <a href="#aplicar">Aplicar a esta oportunidad</a>
+        </article>
+
+        <article>
+          <img
+            class="practica-img"
+            src="images/software.jpg"
+            alt="Persona trabajando en ingeniería de sistemas">
+
+          <h3>Práctica en Ingeniería de Sistemas</h3>
+          <p><strong>País:</strong> Alemania</p>
+          <p><strong>Modalidad:</strong> Híbrida</p>
+          <p><strong>Duración:</strong> 6 meses</p>
+          <a href="#aplicar">Aplicar a esta oportunidad</a>
+        </article>
+
+        <article>
+          <img
+            class="practica-img"
+            src="images/economia.jpg"
+            alt="Persona analizando información económica">
+
+          <h3>Práctica en Economía</h3>
+          <p><strong>País:</strong> España</p>
+          <p><strong>Modalidad:</strong> Remota</p>
+          <p><strong>Duración:</strong> 4 meses</p>
+          <a href="#aplicar">Aplicar a esta oportunidad</a>
+        </article>
+
+        <article>
+          <img
+            class="practica-img"
+            src="images/administracion.jpg"
+            alt="Equipo trabajando en administración empresarial">
+
+          <h3>Práctica en Administración</h3>
+          <p><strong>País:</strong> Países Bajos</p>
+          <p><strong>Modalidad:</strong> Híbrida</p>
+          <p><strong>Duración:</strong> 5 meses</p>
+          <a href="#aplicar">Aplicar a esta oportunidad</a>
+        </article>
+
+        <article>
+          <img
+            class="practica-img"
+            src="images/ingenieriacivil.jpg"
+            alt="Profesional trabajando en ingeniería civil">
+
+          <h3>Práctica en Ingeniería Civil</h3>
+          <p><strong>País:</strong> Canadá</p>
+          <p><strong>Modalidad:</strong> Presencial</p>
+          <p><strong>Duración:</strong> 6 meses</p>
+          <a href="#aplicar">Aplicar a esta oportunidad</a>
+        </article>
+
+        <article>
+          <img
+            class="practica-img"
+            src="images/medicina.jpg"
+            alt="Profesional realizando actividades médicas">
+
+          <h3>Práctica en Medicina</h3>
+          <p><strong>País:</strong> Portugal</p>
+          <p><strong>Modalidad:</strong> Híbrida</p>
+          <p><strong>Duración:</strong> 4 meses</p>
+          <a href="#aplicar">Aplicar a esta oportunidad</a>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="aplicar" class="aplicacion">
+
+      <h2>Aplica a una oportunidad</h2>
+
+      <p>
+        Completa tus datos y selecciona la práctica a la que deseas aplicar.
+      </p>
+
+      <form id="form-aplicacion">
+
+        <label for="nombre">Nombre completo</label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          required>
+
+        <label for="telefono">Número de teléfono</label>
+        <input
+          type="tel"
+          id="telefono"
+          name="telefono"
+          required>
+
+        <label for="correo">Correo electrónico</label>
+        <input
+          type="email"
+          id="correo"
+          name="correo"
+          required>
+
+        <label for="oportunidad">Oportunidad</label>
+        <select
+          id="oportunidad"
+          name="oportunidad"
+          required>
+
+          <option value="">Selecciona una práctica</option>
+          <option value="marketing">Marketing</option>
+          <option value="negocios">Desarrollo de Negocios</option>
+          <option value="sistemas">Ingeniería de Sistemas</option>
+          <option value="economia">Economía</option>
+          <option value="administracion">Administración</option>
+          <option value="civil">Ingeniería Civil</option>
+          <option value="medicina">Medicina</option>
+
+        </select>
+
+        <button type="submit">Enviar aplicación</button>
+
+      </form>
+
+      <p id="mensaje-enviado" hidden>
+        Tu aplicación fue enviada correctamente. Espera la respuesta de la empresa.
+      </p>
+
+    </section>
+
+  </main>
+
+  <footer>
+
+    <h3>PracticasHub</h3>
+
+    <p>
+      Conectando estudiantes con oportunidades de prácticas internacionales.
+    </p>
+
+    <p>© 2026 PracticasHub</p>
+
+  </footer>
+
+  <script>
+    const formulario = document.getElementById("form-aplicacion");
+    const mensaje = document.getElementById("mensaje-enviado");
+
+    formulario.addEventListener("submit", function(event) {
+      event.preventDefault();
+      formulario.style.display = "none";
+      mensaje.hidden = false;
+    });
+  </script>
+
+</body>
+
+</html>

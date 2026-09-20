@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empresas | PracticasHub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main">Saltar al contenido principal</a>
+  <img class="banner"
+       src="images/BANER.png"
+       alt="Estudiantes desarrollando una experiencia profesional internacional">
+
+  <header>
+    <img src="images/logo.png" alt="PrácticasHub" class="logo">
+
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="practicas.html">Prácticas</a>
+      <a href="empresas.html">Empresas</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <section>
+      <h1>Publica una oportunidad de práctica</h1>
+
+      <p>
+        Conecta con estudiantes interesados en experiencias profesionales
+        y encuentra nuevos talentos para tu empresa.
+      </p>
+    </section>
+
+    <section>
+      <h2>¿Por qué publicar en PracticasHub?</h2>
+
+      <div class="partner-flex">
+
+        <article>
+          <h3>Encuentra talento</h3>
+          <img class="empresa-img" src="images/talento.jpg" alt="Busqueda de talento humano">
+          <p>
+            Conecta con estudiantes interesados en desarrollar
+            experiencia profesional.
+          </p>
+        </article>
+
+        <article>
+          <h3>Publica fácilmente</h3>
+          <p>
+            Comparte tus oportunidades de prácticas
+            de forma clara y sencilla.
+          </p>
+        </article>
+
+        <article>
+          <h3>Amplía tu alcance</h3>
+          <img class="empresa-img" src="images/alcance.jpg" alt="Alcance internacional">
+          <p>
+            Da visibilidad a tu empresa y conecta
+            con estudiantes de diferentes lugares.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <section>
+      <h2>Crear una oportunidad</h2>
+
+      <form>
+
+        <label for="company-name">Nombre de la empresa</label>
+        <input
+          type="text"
+          id="company-name"
+          name="company-name"
+          required>
+
+        <label for="email">Correo electrónico</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required>
+
+        <label for="position">Nombre de la práctica</label>
+        <input
+          type="text"
+          id="position"
+          name="position"
+          required>
+
+        <label for="country">País</label>
+        <input
+          type="text"
+          id="country"
+          name="country"
+          required>
+
+        <label for="work-type">Modalidad</label>
+        <select id="work-type" name="work-type">
+          <option value="presencial">Presencial</option>
+          <option value="hibrida">Híbrida</option>
+          <option value="remota">Remota</option>
+        </select>
+
+        <label for="description">Descripción de la oportunidad</label>
+        <textarea
+          id="description"
+          name="description"
+          rows="6"
+          required></textarea>
+
+        <button type="submit">Publicar oportunidad</button>
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <h3>PracticasHub</h3>
+
+    <p>
+      Conectando estudiantes con oportunidades de prácticas internacionales.
+    </p>
+
+    <p>© 2026 PracticasHub</p>
+  </footer>
+
+</body>
+
+</html>
